@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code:Piyo! | SELECT</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <link rel="stylesheet" href="frame_style.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'kvs0ecf',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1 class="select-text">セレクト</h1>
+
+        <p class="button-tutorial"><a href="game_main/index.html?id=0&mode=tutorial" class="button-t">チュートリアル</a></p>
+
+        <!-- select button -->
+        <div class="select-button">
+            <div class="select-group">
+
+                <!-- html -->
+                <p class="button-html"><a href="#html-modal" class="button-s modal">HTML</a></p>
+
+                <section id="html-modal" class="hide-area">
+                    <div class="select-modal">
+                        <h2>HTMLとは！</h2>
+                        <p>
+                            ウェブページを作るための言語だよ！<br>ウェブページは、インターネットで見ることができるウェブサイトのページのことで、<br>HTMLを使って書くことでみんながよく見ているページをつくることができるすごい言語だよ
+                        </p>
+                        <p class="play-button"><a href="game_main/index.html?id=0&mode=html" class="button-modal">このモードで遊ぶ！</a></p>
+                    </div>
+                </section>
+                <!-- html -->
+
+                <!-- Java -->
+                <p class="button-java"><a href="#java-modal" class="button-s modal">Java</a></p>
+
+                <section id="java-modal" class="hide-area">
+                    <div class="select-modal">
+                        <h2>Javaとは！</h2>
+                        <p>
+                            Javaは、人気のプログラミング言語でたくさんの人に使われていて、とても便利！<br>ゲームを作ったり、アプリを作ったり、なんでも作ることができるんだ。<br>しかも、パソコンでもスマホでも使えるシステムを簡単に作ることができるんだよ。
+                        </p>
+                        <p class="play-button"><a href="game_main/index.html?id=0&mode=java" class="button-modal">このモードで遊ぶ！</a></p>
+                    </div>
+                </section>
+                <!-- Java -->
+                </div>
+
+            <div class="select-group">
+                <!-- php -->
+                <p class="button-php"><a href="#php-modal" class="button-s modal">PHP</a></p>
+
+                <section id="php-modal" class="hide-area">
+                    <div class="select-modal">
+                        <h2>PHPとは！</h2>
+                        <p>PHPは、ウェブサイトを作るときに使われることが多いよ！<br>PHPを使ってウェブサイトにアンケートやクイズを作ることもできて、楽しいウェブサイトを作るには欠かせない言語だよ</p>
+                        <p class="play-button"><a href="game_main/index.html?id=0&mode=php" class="button-modal">このモードで遊ぶ！</a></p>
+                    </div>
+                </section>
+                <!-- php -->
+
+                <!-- cs -->
+                <p class="button-cs"><a href="#cs-modal" class="button-s modal">C#</a></p>
+
+                <section id="cs-modal" class="hide-area">
+                    <div class="select-modal">
+                        <h2>C#とは！</h2>
+                        <p>C#は主にWindowsで使われることが多いよ！<br>Windows用のアプリやゲームを作るのに適していて、とても使いやすい言語なんだ。<br>C#は英語に近い言語だから、英語が得意な人にとっては理解しやすいかも！</p>
+                        <p class="play-button"><a href="game_main/index.html?id=0&mode=c" class="button-modal">このモードで遊ぶ！</a></p>
+                    </div>
+                </section>
+                <!-- cs -->
+            </div>
+        </div>
+        <!-- select button -->
+
+        <p class="back-link"><a href="index.html">タイトルに戻る</a></p>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="modal.js"></script>
+</body>
+
+</html>

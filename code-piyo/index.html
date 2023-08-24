@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Code:Piyo!</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+  <link rel="stylesheet" href="frame_style.css">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'kvs0ecf',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <main>
+    <img src="images/title.png" class="title keyframe7 animation">
+
+    <!-- button -->
+    <div class="top-button">
+      <p><a href="select.html" class="button">はじめる</a></p>
+
+      <div class="info-list"><!--リンク先は表示させたいエリアのid名を指定-->
+        <p><a href="#HowTo-play" class="button modal">あそびかた</a></p>
+      </div>
+      <section id="HowTo-play" class="hide-area"><!--表示エリアのHTML。id名にリンク先と同じ名前を指定。非表示にするためhide-areaというクラス名も指定。-->
+        <h2>あそびかた</h2>
+        <p> あそびかたとgifをいれる</p>
+      </section>
+    </div>
+    <!-- button -->
+
+    <!-- hiyoko image -->
+    <div class="updown">
+      <img src="images/hiyoko.png" class="hiyoko-img">
+    </div>
+    <!-- hiyoko image -->
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+  <script src="modal.js"></script>
+</body>
+
+</html>

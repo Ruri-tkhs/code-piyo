@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code:Piyo! | Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="jquery.swapAnimate.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'kvs0ecf',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'kvs0ecf',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+
+<body>
+
+    <main>
+        <p id="question"></p>
+        <div class="area">
+
+            <!-- 
+            <div id="droparea" class="droparea">Droppable
+                <div class="box box-hidden"></div>
+            </div>  -->
+
+        </div>
+        <div class="boxarea-bg">
+            <img src="images/boxarea-bg.png" onselectstart="return false;" onmousedown="return false;">
+        </div>
+
+        <div class="boxarea">
+            <div id="box1" class="box A"></div>
+            <div id="box2" class="box B"></div>
+            <div id="box3" class="box C"></div>
+            <div id="box4" class="box D"></div>
+        </div>
+    </main>
+    <p class="check-btn"><a onclick="btn()" id="button_test" class="modal-open js-modal-open">チェックする！</a></p>
+
+    <!-- モーダル本体 -->
+<div class="modal js-modal">
+    <div class="modal-container">
+      <!-- モーダルを閉じるボタン -->
+      <div class="modal-close js-modal-close">NEXT</div>
+      <!-- モーダル内部のコンテンツ -->
+      <div class="modal-content">
+        <p>開きました。</p>
+      </div>
+    </div>
+  </div>
+
+      <!-- モーダル本体 -->
+<div class="modal2 js-modal2">
+    <div class="modal-container2">
+      <!-- モーダルを閉じるボタン -->
+      <div class="modal-close2 js-modal-close2">もう一回！</div>
+      <!-- モーダル内部のコンテンツ -->
+      <div class="modal-content2">
+        <p>開きませんでした</p>
+      </div>
+    </div>
+  </div>
+
+    <script type="text/javascript" src="question.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
